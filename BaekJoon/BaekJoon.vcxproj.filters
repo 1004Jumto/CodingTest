@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1065.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="1000.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -22,6 +25,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1008.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1110.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1546.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2557.cpp">
