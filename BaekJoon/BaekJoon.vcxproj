@@ -19,7 +19,40 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="1000.cpp" />
+    <ClCompile Include="1001.cpp" />
+    <ClCompile Include="1008.cpp" />
+    <ClCompile Include="1009.cpp" />
+    <ClCompile Include="1065.cpp" />
+    <ClCompile Include="10718.cpp" />
+    <ClCompile Include="10870.cpp" />
+    <ClCompile Include="10872.cpp" />
+    <ClCompile Include="10989.cpp" />
+    <ClCompile Include="10998.cpp" />
+    <ClCompile Include="1110.cpp" />
+    <ClCompile Include="11720.cpp" />
+    <ClCompile Include="1427.cpp" />
+    <ClCompile Include="1546.cpp" />
+    <ClCompile Include="17478.cpp" />
+    <ClCompile Include="1929.cpp" />
+    <ClCompile Include="1978.cpp" />
     <ClCompile Include="2108.cpp" />
+    <ClCompile Include="2231.cpp" />
+    <ClCompile Include="2480.cpp" />
+    <ClCompile Include="2525.cpp" />
+    <ClCompile Include="25305.cpp" />
+    <ClCompile Include="2557.cpp" />
+    <ClCompile Include="2581.cpp" />
+    <ClCompile Include="2588.cpp" />
+    <ClCompile Include="2675.cpp" />
+    <ClCompile Include="2750.cpp" />
+    <ClCompile Include="2751.cpp" />
+    <ClCompile Include="2839.cpp" />
+    <ClCompile Include="2869.cpp" />
+    <ClCompile Include="2884.cpp" />
+    <ClCompile Include="2908.cpp" />
+    <ClCompile Include="4673.cpp" />
+    <ClCompile Include="4948.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
