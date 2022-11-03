@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="min_max.cpp">
+    <ClCompile Include="MoveQueries.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
