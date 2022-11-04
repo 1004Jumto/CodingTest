@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MoveQueries.cpp">
+    <ClCompile Include="SteppingStone.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
