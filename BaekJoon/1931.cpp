@@ -9,18 +9,14 @@ int main(void) {
 	int N;
 	cin >> N;
 
-	vector<vector<int>> time;
+	vector<pair<int, int>> time;
 
 	// 입력받기
 	for (int i = 0; i < N; i++) {	
 		int startTime, endTime;
 		cin >> startTime >> endTime;
 		
-		vector<int> tmp;
-		
-		tmp.push_back(startTime);
-		tmp.push_back(endTime);
-		time.push_back(tmp);
+		time.push_back(make_pair(endTime, startTime));
 	}
 
 	// 정렬
@@ -29,15 +25,13 @@ int main(void) {
 	int start, end;
 	
 	// 시간결정
-	start;
-	end = 0;
+	end = time[0].first;
 	int count = 1;
 
-	for (int i = 0; i < time.size(); i++) {
-		if (end <= time[i][0]) {
+	for (int i = 1; i < time.size(); i++) {
+		if (end <= time[i].second) {
 			count++;
-			start = time[i][0];
-			end = time[i][1];
+			end = time[i].first;
 		}
 	}
 	
