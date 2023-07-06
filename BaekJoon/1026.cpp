@@ -1,0 +1,54 @@
+/*
+* [백준 1026] 보물
+* 옛날 옛적에 수학이 항상 큰 골칫거리였던 나라가 있었다. 이 나라의 국왕 김지민은 다음과 같은 문제를 내고 큰 상금을 걸었다. 길이가 N인 정수 배열 A와 B가 있다. 다음과 같이 함수 S를 정의하자.
+	
+	S = A[0] × B[0] + ... + A[N-1] × B[N-1]
+
+* S의 값을 가장 작게 만들기 위해 A의 수를 재배열하자. 단, B에 있는 수는 재배열하면 안 된다.
+* S의 최솟값을 출력하는 프로그램을 작성하시오.
+* 
+* [알고리즘]
+* 그리디 알고리즘 : 현재 시점에서 best performance를 내기 위한 step을 선택하는 알고리즘으로, 각 단계에서 최선의 선택을 통해 전체적으로 best performance를 수행하는 것이 목적이다.
+* 
+* 해당 문제에서도 각 단계에 맞는 가장 최선의 선택을 해주면 된다.
+* S의 값이 최소가 되는 것이 goal이고, 그러기 위해서는 큰 수에 작은 수를 곱해주는 것이 유리하다.
+* A만 재배열이 가능하므로 먼저 A를 오름차순으로 정렬하고 B는 내림차순으로 정렬한 각 원소의 곱의 합을 반환한다.
+*/
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+
+using namespace std;
+
+int main(void) {
+	// 런타임을 줄여줌
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+
+	int N = 0, tmp = 0, res = 0;
+	vector<int> A, B;
+
+	// 입력받기
+	cin >> N;
+	for (int i = 0; i < N; i++) {
+		cin >> tmp;
+		A.push_back(tmp);
+	}
+	for (int i = 0; i < N; i++) {
+		cin >> tmp;
+		B.push_back(tmp);
+	}
+
+	sort(A.begin(), A.end());		//오름차순
+	sort(B.rbegin(), B.rend());		//내림차순
+	
+	// 계산
+	for (int i = 0; i < N; i++) {
+		res += A[i] * B[i];
+	}
+
+	cout << res;
+	return 0;
+}
