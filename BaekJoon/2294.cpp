@@ -17,14 +17,32 @@
 #include<algorithm>
 #include<vector>	
 
-#define MAX 1500001
-
+#define INF 10001
 using namespace std;
 
 int main(void) {
-	ios::sync_with_stdio(false);
+	ios::sync_with_stdio(false); 
 	cin.tie(NULL);
 	cout.tie(NULL);
 
+	int n, k; cin >> n >> k;
+	vector<int> coin(n+1);
+	for (int i = 1; i <= n; i++)cin >> coin[i];
+
+	int dp[10001];
+	fill_n(dp, 10001, INF);
+	dp[0] = 0;
+	for (int i = 1; i <= n; i++) {
+		for (int j = coin[i]; j <= k; j++) {
+			dp[j] = min(dp[j], dp[j - coin[i]] + 1);
+		}
+	}
+	if (dp[k] == INF) cout << -1;
+	else cout << dp[k];
+
 	return 0;
 }
+
+/// 아 C++에서 맨날 벡터만 쓰고 배열 초기화 방법을 제대로 모르고 있었더니 초기화를 잘못해서 참사가 발생했다
+/// 배열 크기만큼 한번에 초기화하는 것은 0만 가능하다. {0, }; 이런식으로 가능. 그러나 다른 수로 초기화 못함. 
+/// 다른 수로 모두 초기화하기 위해 반복문을 쓰거나 위처럼 fill_n함수를 써서 초기화할 수 있다.
