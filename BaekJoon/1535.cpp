@@ -18,21 +18,21 @@
 
 using namespace std;
 
-int Testcase;
+int testcase;
 
 int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	cin >> Testcase;
+	cin >> testcase;
 	int strength[21]{ 0, };
 	int happy[21]{ 0, };
 	int dp[101]{ 0, };
 
-	for (int i = 1; i <= Testcase; i++) cin >> strength[i];
-	for (int i = 1; i <= Testcase; i++) cin >> happy[i];
-	for (int i = 1; i <= Testcase; i++) {
+	for (int i = 1; i <= testcase; i++) cin >> strength[i];
+	for (int i = 1; i <= testcase; i++) cin >> happy[i];
+	for (int i = 1; i <= testcase; i++) {
 		for (int j = 100; j >= strength[i]; j--) {
 			dp[j] = max(dp[j], dp[j - strength[i]] + happy[i]);
 		}
