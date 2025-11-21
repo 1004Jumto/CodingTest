@@ -1,5 +1,7 @@
+import java.util.Stack;
+
 class Solution {
-    public String decodeString(String s) {
+    public static String decodeString(String s) {
         StringBuilder sb = new StringBuilder();
         Stack<Integer> nSt = new Stack<>();
         Stack<StringBuilder> sSt = new Stack<>();
@@ -32,4 +34,8 @@ class Solution {
 
         return sb.toString();
     }
+
+	public static void main(String[] args) {
+		System.out.println(decodeString("3[a]2[bcd3[ab]]ef"));
+	}
 }
