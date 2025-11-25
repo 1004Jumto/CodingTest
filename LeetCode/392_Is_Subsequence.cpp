@@ -1,3 +1,8 @@
+#include<stdio.h>
+#include<string>
+
+using namespace std;
+
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
@@ -24,3 +29,9 @@ public:
 
     }
 };
+
+
+int main()
+{
+    return 1;
+}
