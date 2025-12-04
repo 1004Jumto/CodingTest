@@ -1,6 +1,3 @@
-import java.util.List;
-import java.util.ArrayList;
-
 class Solution {
     public String solution(int n, int t, int m, int p) {
         String answer = "";

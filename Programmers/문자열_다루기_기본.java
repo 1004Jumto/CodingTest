@@ -1,6 +1,5 @@
 class Solution {
-    public boolean solution(String s) {
-        boolean answer = true;
+    public boolean solution(String s) { 
          
         // 길이검사
         if(s.length() != 4 && s.length() != 6) return false;

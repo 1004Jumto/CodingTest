@@ -1,0 +1,57 @@
+{
+    "type": "java",
+    "name": "Launch Current File",
+    "request": "launch",
+    "mainClass": "${file}",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java2018.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java11659.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java11720.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "java2018.Solution",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "java1546.Solution",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "CodingTest_4d612660"
+        }
+    ] // 현재 열려 있는 파일을 mainClass로 지정
+}

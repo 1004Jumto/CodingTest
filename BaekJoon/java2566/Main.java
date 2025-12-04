@@ -1,6 +1,5 @@
-package BaekJoon;
-
-import java.util.Arrays;
+package java2566;
+ 
 import java.util.Scanner;
 
 public class Main {
