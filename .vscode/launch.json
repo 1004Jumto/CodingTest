@@ -8,6 +8,34 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "java10773.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java10986.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java1253.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "java1940.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "java2018.Main",
             "projectName": "CodingTest_4d612660"
         },
