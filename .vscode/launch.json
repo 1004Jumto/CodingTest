@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "java1145.Main",
+            "projectName": "CodingTest_4d612660"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "java18258.Main",
             "projectName": "CodingTest_63030b3a"
         },
