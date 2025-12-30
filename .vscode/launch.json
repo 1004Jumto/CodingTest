@@ -8,6 +8,7 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+<<<<<<< HEAD
             "mainClass": "java1850.Main",
             "projectName": "CodingTest_4507856f"
         },
@@ -31,6 +32,10 @@
             "request": "launch",
             "mainClass": "java1966.Main",
             "projectName": "CodingTest_4507856f"
+=======
+            "mainClass": "java1145.Main",
+            "projectName": "CodingTest_4d612660"
+>>>>>>> c44fe29b75aaa1853b443510b3ae03f5f99c2a6b
         },
         {
             "type": "java",
