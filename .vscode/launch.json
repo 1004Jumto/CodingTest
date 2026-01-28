@@ -4,34 +4,7 @@
     "request": "launch",
     "mainClass": "${file}",
     "configurations": [
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "java14501.Main",
-            "projectName": "CodingTest_4d612660"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "java11725.Main",
-            "projectName": "CodingTest_4d612660"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "java18352.Main",
-            "projectName": "CodingTest_4d612660"
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "java1145.Main",
-            "projectName": "CodingTest_4d612660"
-        },
+        
         {
             "type": "java",
             "name": "Main",
