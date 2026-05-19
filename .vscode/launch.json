@@ -4,6 +4,7 @@
     "request": "launch",
     "mainClass": "${file}",
     "configurations": [
+        
         {
             "type": "java",
             "name": "Main",

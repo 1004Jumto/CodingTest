@@ -1,58 +1,38 @@
-package java18258;
-
+package java1966;
+ 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
+ 
 public class Main {
-    public static void main(String[] args) throws IOException {
+     
+    
+    public static void main(String[] args) throws IOException { 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        StringBuilder sb = new StringBuilder();
 
-        int N = Integer.parseInt(st.nextToken());
-        Queue<Integer> q = new LinkedList<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>((o1, o2) -> o1 - o2);
+        int testcase = Integer.parseInt(st.nextToken());
 
-        int lastNum = 0;
-        for (int i = 0; i < N; i++) {
+        for(int i = 0; i<testcase; i++){
+            // 문서 개수, target문서 인덱스
             st = new StringTokenizer(br.readLine());
+            int N = Integer.parseInt(st.nextToken());
+            int M = Integer.parseInt(st.nextToken());
 
-            switch (st.nextToken()) {
-                case "push":
-                    lastNum = Integer.parseInt(st.nextToken());
-                    q.offer(lastNum);
-                    break;
-
-                case "pop":
-                    if(q.isEmpty()) sb.append(-1 + "\n");
-                    else sb.append(q.poll() + "\n"); 
-                    break;
-
-                case "size":
-                    sb.append(q.size() + "\n");
-                    break;
-
-                case "empty":
-                    if(q.isEmpty()) sb.append(1 + "\n");
-                    else sb.append(0 + "\n");
-                    break;
-
-                case "front":
-                    if(q.isEmpty()) sb.append(-1 + "\n");
-                    else sb.append(q.peek() + "\n");
-                    break;
-
-                default:    //back
-                    if(q.isEmpty()) sb.append(-1 + "\n");
-                    else sb.append(lastNum + "\n");
-                    break;
+            // 우선순위 큐에 N개 수 삽입
+            for(int j = 0; j < N; j++){
+                st = new StringTokenizer(br.readLine());
+                pq.offer(Integer.parseInt(st.nextToken()));
             }
+
         }
 
-        System.out.println(sb);
 
+        return;
     }
+
 }
